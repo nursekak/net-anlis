@@ -161,13 +161,13 @@
 
 ### 1. Клонирование репозитория
 ```bash
-git clone https://github.com/yourusername/network-analyzer.git
+git clone https://github.com/nursekak/net-anlis
 cd network-analyzer
 ```
 
 ### 2. Настройка бэкенда
 ```bash
-cd backend
+cd backend/src
 dotnet restore
 dotnet build
 dotnet run
@@ -177,6 +177,8 @@ dotnet run
 ```bash
 cd frontend
 pip install -r requirements.txt
+python -m venv venv
+.\venv\Scripts\activate
 streamlit run ui/app.py
 ```
 
