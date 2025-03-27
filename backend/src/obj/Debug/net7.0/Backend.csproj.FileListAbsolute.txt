@@ -1,0 +1,7 @@
+D:\github\zalupa\backend\src\obj\Debug\net7.0\Backend.csproj.AssemblyReference.cache
+D:\github\zalupa\backend\src\obj\Debug\net7.0\Backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\zalupa\backend\src\obj\Debug\net7.0\Backend.AssemblyInfoInputs.cache
+D:\github\zalupa\backend\src\obj\Debug\net7.0\Backend.AssemblyInfo.cs
+D:\github\zalupa\backend\src\obj\Debug\net7.0\Backend.csproj.CoreCompileInputs.cache
+D:\github\zalupa\backend\src\obj\Debug\net7.0\Backend.MvcApplicationPartsAssemblyInfo.cs
+D:\github\zalupa\backend\src\obj\Debug\net7.0\Backend.MvcApplicationPartsAssemblyInfo.cache

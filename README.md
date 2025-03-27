@@ -1,0 +1,254 @@
+# Network Analyzer
+
+Веб-приложение для анализа сетевых интерфейсов и URL. Позволяет просматривать информацию о сетевых интерфейсах, тестировать скорость соединения и анализировать URL.
+
+## Возможности
+
+- Просмотр информации о сетевых интерфейсах:
+  - IP-адреса
+  - MAC-адреса
+  - Статус интерфейса
+  - Скорость соединения
+  - Тип интерфейса
+
+- Тестирование скорости соединения:
+  - Измерение скорости загрузки
+  - Измерение скорости отдачи
+  - Использование нескольких тестовых серверов
+  - Усреднение результатов для точности
+
+- Анализ URL:
+  - Парсинг компонентов URL
+  - Проверка доступности
+  - DNS-информация
+  - Тип адреса (публичный/приватный)
+  - Параметры запроса
+
+## Технологии и библиотеки
+
+### Backend (C#)
+- **Фреймворк и SDK:**
+  - .NET 7.0 - Основной фреймворк
+    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x`
+  - ASP.NET Core Web API - Создание REST API
+    - Путь: `C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\7.0.x`
+  - C# 11.0 - Язык программирования
+    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x`
+
+- **Сетевые библиотеки:**
+  - System.Net.NetworkInformation
+    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Net.NetworkInformation.dll`
+    - Функции:
+      - Получение информации о сетевых интерфейсах
+      - Проверка статуса соединения
+      - Получение MAC-адресов
+      - Мониторинг сетевой активности
+  - System.Net.Http
+    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Net.Http.dll`
+    - Функции:
+      - HTTP-клиент для тестирования скорости
+      - Отправка и получение данных
+      - Управление HTTP-запросами
+  - System.Net.Sockets
+    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Net.Sockets.dll`
+    - Функции:
+      - Работа с сокетами
+      - Сетевое взаимодействие низкого уровня
+  - System.Net.Dns
+    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Net.NameResolution.dll`
+    - Функции:
+      - DNS-резолвинг
+      - Получение информации о доменах
+      - Проверка доступности хостов
+
+- **Встроенные компоненты:**
+  - Microsoft.Extensions.Logging
+    - Путь: `C:\Program Files\dotnet\shared\Microsoft.Extensions.Logging\7.0.x`
+    - Функции:
+      - Логирование приложения
+      - Отслеживание ошибок
+      - Мониторинг производительности
+  - Microsoft.Extensions.DependencyInjection
+    - Путь: `C:\Program Files\dotnet\shared\Microsoft.Extensions.DependencyInjection\7.0.x`
+    - Функции:
+      - Внедрение зависимостей
+      - Управление жизненным циклом сервисов
+  - System.Text.Json
+    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Text.Json.dll`
+    - Функции:
+      - Сериализация/десериализация JSON
+      - Работа с API-ответами
+  - System.Threading.Tasks
+    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Threading.Tasks.dll`
+    - Функции:
+      - Асинхронное программирование
+      - Параллельное выполнение операций
+
+### Frontend (Python)
+- **Основные библиотеки:**
+  - Streamlit 1.24.0+
+    - Путь: `frontend/venv/Lib/site-packages/streamlit`
+    - Функции:
+      - Создание веб-интерфейса
+      - Отображение данных
+      - Интерактивные элементы управления
+      - Графики и метрики
+  - requests 2.31.0+
+    - Путь: `frontend/venv/Lib/site-packages/requests`
+    - Функции:
+      - HTTP-запросы к API
+      - Работа с REST-сервисами
+      - Обработка ответов
+  - pandas 2.0.0+
+    - Путь: `frontend/venv/Lib/site-packages/pandas`
+    - Функции:
+      - Обработка данных
+      - Работа с таблицами
+      - Анализ результатов
+
+- **Дополнительные зависимости:**
+  - python-dateutil
+    - Путь: `frontend/venv/Lib/site-packages/dateutil`
+    - Функции:
+      - Работа с датами и временем
+      - Форматирование временных меток
+  - urllib3
+    - Путь: `frontend/venv/Lib/site-packages/urllib3`
+    - Функции:
+      - HTTP-клиент (используется requests)
+      - Управление соединениями
+  - typing-extensions
+    - Путь: `frontend/venv/Lib/site-packages/typing_extensions`
+    - Функции:
+      - Поддержка типизации
+      - Улучшение читаемости кода
+
+### Тестовые серверы
+- Cloudflare Speed Test
+  - URL: `https://speed.cloudflare.com`
+  - Функции:
+    - Измерение скорости загрузки/отдачи
+    - Глобальная доступность
+- Selectel Speed Test
+  - URL: `https://speedtest.selectel.ru`
+  - Функции:
+    - Тестирование в России
+    - Стабильное соединение
+- Ростелеком Speed Test
+  - URL: `https://speedtest.rt.ru`
+  - Функции:
+    - Локальное тестирование
+    - Оптимизированные серверы
+- МТС Speed Test
+  - URL: `https://speedtest.mts.ru`
+  - Функции:
+    - Альтернативный источник
+    - Разнообразие точек измерения
+
+## Требования
+
+### Системные требования
+- Windows 10/11 или Linux
+- Минимум 4GB RAM
+- 1GB свободного места на диске
+
+### Программные требования
+- .NET 7.0 SDK
+- Python 3.8 или выше
+- pip (менеджер пакетов Python)
+
+## Установка и запуск
+
+### 1. Клонирование репозитория
+```bash
+git clone https://github.com/yourusername/network-analyzer.git
+cd network-analyzer
+```
+
+### 2. Настройка бэкенда
+```bash
+cd backend
+dotnet restore
+dotnet build
+dotnet run
+```
+
+### 3. Настройка фронтенда
+```bash
+cd frontend
+pip install -r requirements.txt
+streamlit run ui/app.py
+```
+
+## Структура проекта
+
+```
+network-analyzer/
+├── backend/
+│   ├── src/
+│   │   ├── Controllers/
+│   │   │   └── NetworkController.cs
+│   │   ├── Models/
+│   │   │   └── NetworkModels.cs
+│   │   ├── Services/
+│   │   │   └── NetworkService.cs
+│   │   └── Program.cs
+│   └── Backend.csproj
+├── frontend/
+│   ├── ui/
+│   │   └── app.py
+│   └── requirements.txt
+└── README.md
+```
+
+## Использование
+
+1. Откройте браузер и перейдите по адресу `http://localhost:8501`
+2. В левом меню выберите нужный раздел:
+   - "Сетевые интерфейсы" для просмотра информации об интерфейсах
+   - "Анализ URL" для анализа URL
+
+### Тестирование скорости
+1. В разделе "Сетевые интерфейсы" выберите нужный интерфейс
+2. Нажмите кнопку "Тестировать скорость"
+3. Дождитесь завершения тестирования
+4. Просмотрите результаты скорости загрузки и отдачи
+
+### Анализ URL
+1. В разделе "Анализ URL" введите URL для анализа
+2. Нажмите кнопку "Анализировать"
+3. Просмотрите результаты анализа
+
+## Особенности реализации
+
+### Тестирование скорости
+- Используются серверы российских провайдеров
+- Тестирование проводится с разными размерами файлов
+- Результаты усредняются для повышения точности
+- Таймаут тестирования: 10 секунд
+
+### Анализ URL
+- Автоматическое добавление протокола при необходимости
+- Проверка доступности через ping
+- Получение DNS-информации
+- Определение типа адреса
+
+## Логирование
+
+- Бэкенд использует встроенное логирование .NET
+- Логи содержат информацию о:
+  - Запросах к API
+  - Ошибках
+  - Результатах тестирования скорости
+  - Процессе анализа URL
+
+## Безопасность
+
+- Проверка входных данных
+- Обработка ошибок
+- Таймауты для сетевых операций
+- Безопасное хранение конфигурации
+
+## Лицензия
+
+MIT License 
