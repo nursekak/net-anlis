@@ -27,35 +27,25 @@
 ## Технологии и библиотеки
 
 ### Backend (C#)
-- **Фреймворк и SDK:**
-  - .NET 7.0 - Основной фреймворк
-    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x`
-  - ASP.NET Core Web API - Создание REST API
-    - Путь: `C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App\7.0.x`
-  - C# 11.0 - Язык программирования
-    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x`
 
 - **Сетевые библиотеки:**
   - System.Net.NetworkInformation
-    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Net.NetworkInformation.dll`
     - Функции:
       - Получение информации о сетевых интерфейсах
       - Проверка статуса соединения
       - Получение MAC-адресов
       - Мониторинг сетевой активности
   - System.Net.Http
-    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Net.Http.dll`
     - Функции:
       - HTTP-клиент для тестирования скорости
       - Отправка и получение данных
       - Управление HTTP-запросами
   - System.Net.Sockets
-    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Net.Sockets.dll`
-    - Функции:
+ - Функции:
       - Работа с сокетами
       - Сетевое взаимодействие низкого уровня
   - System.Net.Dns
-    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Net.NameResolution.dll`
+
     - Функции:
       - DNS-резолвинг
       - Получение информации о доменах
@@ -63,24 +53,23 @@
 
 - **Встроенные компоненты:**
   - Microsoft.Extensions.Logging
-    - Путь: `C:\Program Files\dotnet\shared\Microsoft.Extensions.Logging\7.0.x`
+
     - Функции:
       - Логирование приложения
       - Отслеживание ошибок
       - Мониторинг производительности
   - Microsoft.Extensions.DependencyInjection
-    - Путь: `C:\Program Files\dotnet\shared\Microsoft.Extensions.DependencyInjection\7.0.x`
+    -
     - Функции:
       - Внедрение зависимостей
       - Управление жизненным циклом сервисов
   - System.Text.Json
-    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Text.Json.dll`
+ 
     - Функции:
       - Сериализация/десериализация JSON
       - Работа с API-ответами
   - System.Threading.Tasks
-    - Путь: `C:\Program Files\dotnet\shared\Microsoft.NETCore.App\7.0.x\System.Threading.Tasks.dll`
-    - Функции:
+  - Функции:
       - Асинхронное программирование
       - Параллельное выполнение операций
 
